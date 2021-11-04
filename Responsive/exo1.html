@@ -1,0 +1,37 @@
+<style>
+  body {
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .block {
+    background: white;
+    display: block;
+    border: 2px solid currentColor;
+    padding: 20px;
+    flex: 1;
+  }
+
+  .block-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block-list > .box {
+    flex: 1;
+  }
+
+  @media (max-width: 480px) {
+    .block-list {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<ul class="block-list">
+  <li class="block">A</li>
+  <li class="block">B</li>
+  <li class="block">C</li>
+</ul>
